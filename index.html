@@ -1,12 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Hello World</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <title>Submission 1.0</title>
 </head>
+
 <body>
-    <h1>DSC UBHARA</h1>
+    <header>
+        <div class="topnav" id="myTopnav">
+            <a href="index.html" style="color: aqua;font-family: monospace;" class="main"><b>FiqSky</b></a>
+            <a href="index.html">Home</a>
+            <a href="#article">Article</a>
+            <a href="#about">About</a>
+            <a href="javascript:void(0);" class="icon" onclick="myNav()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </header>
+    <main>
+        <content>
+            <article id="article" class="card">
+                <a href="#">
+                    <h2>React Native</h2>
+                </a>
+                <img src="assets/img/reactnative.png" class="featured-images" alt="reactnative">
+                <p>Membuat aplikasi yang berbasis Android maupun iOS memang tidak mudah dan membutuhkan banyak kode-kode khusus yang harus dibuat. Hal tersebut tentu akan memakan banyak waktu dan bagi para pemula, cukup rumit. Namun, kini kekhawatiran tersebut
+                    dapat tertangani dengan adanya react native.</p>
+                <p>Pada dasarnya react native adalah sebuah framework dari Javascript yang banyak dikembangkan oleh perusahaan besar dalam bidang teknologi seperti Facebook. Jadi, dengan react native kamu tidak perlu membuat aplikasi hybrid. Selain itu,
+                    react native mampu mengkompilasi aplikasi ke dalam sebuah native code pada Android maupun iOS. Ulasan kali ini akan membahas mengenai apa saja keunggulan yang ada dalam react native dan bagaimana cara menerapkannya dalam membuat sebuah
+                    aplikasi...
+                </p>
+            </article>
+            <article class="card">
+                <a href="#">
+                    <h2>Flutter</h2>
+                </a>
+                <img src="assets/img/flutter.png" class="featured-images" alt="flutter">
+                <p>Jika sebelumnya kebanyakan artikel atau video tutorial Kawan Koding kebanyakan membahas Laravel & PHP, kali ini kita mulai sesuatu yang baru, kita akan mulai membahas Flutter, dimulai dengan kita mengenal apa itu Flutter.</p>
+                <p>Jadi apa itu Flutter? Flutter adalah sebuah alat yang membuat kita bia membangun aplikasi antar platform (iOs, Android) secara native atau native cross-platform dengan menggunakan satu bahasa pemrograman dan satu basis kode. Native cross-platform
+                    yang dimaskud bukan sebuah aplikasi web yang dibungkus oleh native app tetapi kita benar benar membangun dua aplikasi berbeda untuk iOs dan Android yang kemudian bisa kita distribusikan ke Apple App Store maupun Google Play Store...
+                </p>
+            </article>
+        </content>
+        <aside>
+            <article class="profile card" id="about">
+                <header>
+                    <h2>About</h2>
+                    <figure>
+                        <img src="assets/img/fiqih.JPG">
+                    </figure>
+                </header>
+                <section>
+                    <table>
+                        <tr>
+                            <th>Nama</th>
+                            <td>Fiqih Firdaus Maulana</td>
+                        </tr>
+                        <tr>
+                            <th>Email</th>
+                            <td>fiqihfirdausmaualana@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <th>Quotes</th>
+                            <td>learn, do, anyting</td>
+                        </tr>
+                    </table>
+                </section>
+            </article>
+        </aside>
+    </main>
+    <footer>
+        <script type="text/javascript">
+            var d = new Date()
+            var n = d.getFullYear()
+            document.write("&#169; " + n + " FiqSky. | Belajar Dasar Pemrograman Web");
+        </script>
+    </footer>
+    <i onclick="topFunction()" id="myBtn" class="fa fa-arrow-up"></i>
 </body>
+<script src="assets/script.js"></script>
+
 </html>
