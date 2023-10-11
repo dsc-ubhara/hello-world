@@ -1,63 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/style.css">
     <link rel="stylesheet" href="assets/responsive.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="assets/img/Logo.jpg" type="image/x-icon">
-    <title>DSC UBHARA HACKTOBERFEST 2023</title>
+    <title>DSC UBHARA HACKTOBERFEST 2022</title>
 </head>
+
 <body>
-    <header>
-        <div class="topnav" id="myTopnav">
-            <a href="index.html" class="main"><b>DSC UBHARA</b></a>
-            <a href="index.html">Home</a>
-            <a href="#article">Article</a>
-            <a href="pong.html">Pong Game</a>
-            <a href="./assets/2048/index.html">2048 Game</a>
-            <a href="./assets/snake/index.html">Snake Game</a>
-            <a href="#about">About</a>
-            <a href="javascript:void(0);" class="icon" onclick="myNav()">
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html" class="main">
+                    <img src="assets/img/Logo.jpg" alt="DSC UBHARA" class="logo-image">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#article">Article</a></li>
+                <li><a href="pong.html">Pong Game</a></li>
+                <li><a href="./assets/2048/index.html">2048 Game</a></li>
+                <li><a href="./assets/snake/index.html">Snake Game</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+            <div class="menu-icon" onclick="toggleMenu()">
                 <i class="fa fa-bars"></i>
-            </a>
-        </div>
+            </div>
+        </nav>
     </header>
     <main>
-        <content>
-            <article id="article" class="card" data-aos="fade-right">
-                <a href="#">
-                    <h2>DSC UBHARA INFO SESSIONS</h2>
-                </a>
-                <img src="assets/img/info.jpg" class="featured-images" alt="reactnative">
+        <section class="article" data-aos="fade-right">
+            <div class="article-content">
+                <h2>DSC UBHARA INFO SESSIONS</h2>
+                <img src="assets/img/info.jpg" alt="DSC Info Session" class="featured-image">
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia odit ex atque ab quidem perspiciatis.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia odit ex atque ab quidem perspiciatis.
                 </p>
                 <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique corporis eligendi excepturi quo beatae dolore quod repellendus alias, animi laborum doloribus culpa veniam repellat neque omnis rem perferendis id aperiam?
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique corporis eligendi excepturi quo beatae
+                    dolore quod repellendus alias, animi laborum doloribus culpa veniam repellat neque omnis rem perferendis id aperiam?
                 </p>
-            </article>
-            <article class="card" data-aos="zoom-in">
-                <a href="#">
-                    <h2>DSC UBHARA</h2>
-                </a>
-                <img src="assets/img/banner.jpg" class="featured-images" alt="flutter">
+            </div>
+        </section>
+        <section class="article" data-aos="zoom-in">
+            <div class="article-content">
+                <h2>DSC UBHARA</h2>
+                <img src="assets/img/banner.jpg" alt="DSC UBHARA" class="featured-image">
                 <p>Welcome to chapter DSC Ubhara 2020.</p>
                 <p>Developer Student Clubs are university-based community groups for students interested in Google developer technologies.</p>
-            </article>
-        </content>
-        <aside>
-            <article class="profile card" id="about" data-aos="fade-left">
+            </div>
+        </section>
+        <aside class="profile" data-aos="fade-left">
+            <div class="profile-content">
                 <header>
                     <h2>About Us</h2>
-                    <figure>
-                        <img src="assets/img/Logo.jpg">
-                    </figure>
+                    <img src="assets/img/Logo.jpg" alt="DSC UBHARA" class="profile-image">
                 </header>
                 <section>
-                    <table>
+                    <table class="profile-table">
                         <tr>
                             <th>Nama</th>
                             <td>DSC UBHARA</td>
@@ -72,19 +77,17 @@
                         </tr>
                     </table>
                 </section>
-            </article>
+            </div>
         </aside>
     </main>
-    <footer>
+    <footer class="footer">
         <p>&#169; <span id="year"></span> DSC UBHARA. | HACKTOBERFEST <span id="year"></span> is AWESOME</p>
     </footer>
-    <i onclick="topFunction()" id="myBtn" class="fa fa-arrow-up"></i>
+    <div class="scroll-to-top" onclick="scrollToTop()">
+        <i class="fa fa-arrow-up"></i>
+    </div>
+    <script src="assets/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/aos.js"></script>
 </body>
-<script src="assets/script.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="assets/aos.js"></script>
-<script>
-    // JavaScript to update the year in the footer
-    document.getElementById("year").textContent = new Date().getFullYear();
-</script>
 </html>
