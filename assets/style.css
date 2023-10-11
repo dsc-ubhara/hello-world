@@ -7,9 +7,10 @@
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f5f5f5;
+    margin: 0;
 }
 
-.header {
+header {
     background-color: #333;
     padding: 20px 0;
     text-align: center;
@@ -32,9 +33,14 @@ body {
     text-decoration: none;
 }
 
-.logo-image {
+.logo img {
     width: 100px;
     height: auto;
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
 }
 
 .nav-links {
@@ -53,31 +59,7 @@ body {
     color: #000;
 }
 
-.menu-icon {
-    display: none;
-    cursor: pointer;
-}
-
-.main {
-    background-color: #333;
-    padding: 10px 20px;
-    border-radius: 5px;
-}
-
-.main a {
-    color: #f2f2f2;
-    text-decoration: none;
-}
-
-.main a:hover {
-    color: #000;
-}
-
-.main:hover {
-    background-color: #a1f4ff;
-}
-
-.article {
+.card {
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.2);
@@ -85,11 +67,22 @@ body {
     margin: 20px 0;
 }
 
-.article-content {
-    text-align: justify;
+.card a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
 }
 
-.featured-image {
+.card a:hover {
+    color: #000;
+}
+
+.card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.featured-images {
     width: 100%;
     height: auto;
     border-radius: 5px;
@@ -97,19 +90,7 @@ body {
     object-position: center;
 }
 
-.profile {
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    margin: 20px 0;
-}
-
-.profile-content {
-    text-align: center;
-}
-
-.profile-image {
+.profile img {
     width: 200px;
     height: 200px;
     border-radius: 5%;
@@ -147,4 +128,30 @@ footer {
 
 .scroll-to-top:hover {
     background-color: rgba(51, 51, 51, 0.5);
+}
+
+/* Responsive styles for mobile devices */
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
 }
