@@ -6,6 +6,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
 }
 
 .topnav {
@@ -21,11 +22,12 @@ body {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .topnav a:hover {
-    background-color: rgb(161, 244, 255);
-    color: black;
+    background-color: #a1f4ff;
+    color: #000;
 }
 
 .topnav a.main {
@@ -40,15 +42,17 @@ body {
     text-align: center;
 }
 
-h2,
-h3 {
+h2, h3 {
     color: #333;
 }
 
 main {
     padding: 20px;
-    overflow: auto;
     text-align: justify;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.2);
+    overflow: hidden;
 }
 
 a {
@@ -56,15 +60,17 @@ a {
 }
 
 .card {
-    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
     padding: 20px;
     margin-top: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.2);
 }
 
 .featured-images {
     width: 100%;
-    max-height: 300%;
+    height: auto;
+    border-radius: 5px;
     object-fit: cover;
     object-position: center;
 }
@@ -77,8 +83,8 @@ header {
     width: 200px;
     height: 200px;
     border-radius: 5%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
+    display: block;
 }
 
 content {
@@ -98,7 +104,8 @@ footer {
     padding: 40px;
     text-align: center;
     color: #333;
-    background-color: #D1E8E4;
+    background-color: #d1e8e4;
+    border-top: 1px solid #ccc;
 }
 
 table th {
@@ -120,6 +127,7 @@ table th {
     cursor: pointer;
     padding: 10px;
     border-radius: 30px;
+    transition: background-color 0.3s;
 }
 
 #myBtn:hover {
