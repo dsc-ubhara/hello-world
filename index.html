@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,77 +11,82 @@
     <link rel="shortcut icon" href="assets/img/Logo.jpg" type="image/x-icon">
     <title>DSC UBHARA HACKTOBERFEST 2022</title>
 </head>
+
 <body>
     <header>
-        <nav class="navbar">
-            <a href="index.html" class="logo">
-                <img src="assets/img/Logo.jpg" alt="DSC UBHARA">
-            </a>
-            <div class="menu-toggle" onclick="toggleMenu()">
+        <div class="topnav" id="myTopnav">
+            <a href="index.html" style="color: aqua;font-family: monospace;" class="main"><b>DSC UBHARA</b></a>
+            <a href="index.html">Home</a>
+            <a href="#article">Article</a>
+            <a href="pong.html">Pong Game</a>
+            <a href="./assets/2048/index.html">2048 Game</a>
+            <a href="./assets/snake/index.html">Snack Game</a>
+            <a href="#about">About</a>
+            <a href="javascript:void(0);" class="icon" onclick="myNav()">
                 <i class="fa fa-bars"></i>
-            </div>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#article">Article</a></li>
-                <li><a href="pong.html">Pong Game</a></li>
-                <li><a href="./assets/2048/index.html">2048 Game</a></li>
-                <li><a href="./assets/snake/index.html">Snake Game</a></li>
-                <li><a href="#about">About</a></li>
-            </ul>
-        </nav>
+            </a>
+        </div>
     </header>
     <main>
-        <section class="card" data-aos="fade-right">
-            <a href="#">
-                <h2>DSC UBHARA INFO SESSIONS</h2>
-            </a>
-            <img src="assets/img/info.jpg" class="featured-images" alt="DSC Info Session">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia odit ex atque ab quidem perspiciatis.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique corporis eligendi excepturi quo beatae dolore quod repellendus alias, animi laborum doloribus culpa veniam repellat neque omnis rem perferendis id aperiam?</p>
-        </section>
-        <section class="card" data-aos="zoom-in">
-            <a href="#">
-                <h2>DSC UBHARA</h2>
-            </a>
-            <img src="assets/img/banner.jpg" class="featured-images" alt="DSC UBHARA">
-            <p>Welcome to chapter DSC Ubhara 2020.</p>
-            <p>Developer Student Clubs are university-based community groups for students interested in Google developer technologies.</p>
-        </section>
-        <aside class="profile card" data-aos="fade-left">
-            <header>
-                <h2>About Us</h2>
-                <img src="assets/img/Logo.jpg" alt="DSC UBHARA" class="profile-image">
-            </header>
-            <section>
-                <table class="profile-table">
-                    <tr>
-                        <th>Nama</th>
-                        <td>DSC UBHARA</td>
-                    </tr>
-                    <tr>
-                        <th>Email</th>
-                        <td>dsc.ubhara@gmail.com</td>
-                    </tr>
-                    <tr>
-                        <th>Quote</th>
-                        <td>Create Impactful</td>
-                    </tr>
-                </table>
-            </section>
+        <content>
+            <article id="article" class="card" data-aos="fade-right">
+                <a href="#">
+                    <h2>DSC UBHARA INFO SESSIONS</h2>
+                </a>
+                <img src="assets/img/info.jpg" class="featured-images" alt="reactnative">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia odit ex atque ab quidem perspiciatis. Quam explicabo veritatis earum eveniet alias aliquam possimus? Magni, veritatis soluta laborum eaque inventore quas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate voluptatem necessitatibus sit error facere quaerat nesciunt non expedita? Accusantium fuga impedit beatae aliquam quos! Eligendi fugit odit molestias ipsa nobis?</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique corporis eligendi excepturi quo beatae dolore quod repellendus alias, animi laborum doloribus culpa veniam repellat neque omnis rem perferendis id aperiam? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, quis maxime? A, sapiente laborum, ratione error, alias molestiae itaque blanditiis repellat ea asperiores animi vitae iste ad consectetur voluptatum aut. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, accusamus tenetur voluptatum, esse excepturi iste iure quasi consectetur, minima dignissimos iusto officia possimus? Minima, reiciendis magni mollitia inventore reprehenderit esse! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa dignissimos amet impedit, molestiae, laudantium vitae doloribus numquam autem voluptatibus velit pariatur! Temporibus mollitia corrupti laboriosam provident ipsa hic cum ab!
+                </p>
+            </article>
+            <article class="card" data-aos="zoom-in">
+                <a href="#">
+                    <h2>DSC UBHARA</h2>
+                </a>
+                <img src="assets/img/banner.jpg" class="featured-images" alt="flutter">
+                <p>Welcome to chapter DSC Ubhara 2020.</p>
+                <p>Developer Student Clubs are university based community groups for students interested in Google developer technologies. Students from all undergraduate or graduate programs with an interest in growing as a developer are welcome. By joining a DSC, students grow their knowledge in a peer-to-peer learning environment and build solutions for local businesses and their community.
+                </p>
+            </article>
+        </content>
+        <aside>
+            <article class="profile card" id="about" data-aos="fade-left">
+                <header>
+                    <h2>About Us</h2>
+                    <figure>
+                        <img src="assets/img/Logo.jpg">
+                    </figure>
+                </header>
+                <section>
+                    <table>
+                        <tr>
+                            <th>Nama</th>
+                            <td>DSC UBHARA</td>
+                        </tr>
+                        <tr>
+                            <th>Email</th>
+                            <td>dsc.ubhara@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <th>Quote</th>
+                            <td>Create Impacfulll</td>
+                        </tr>
+                    </table>
+                </section>
+            </article>
         </aside>
     </main>
     <footer>
-        <p>&#169; <span id="year"></span> DSC UBHARA. | HACKTOBERFEST <span id="year"></span> is AWESOME</p>
+        <script type="text/javascript">
+            var d = new Date()
+            var n = d.getFullYear()
+            document.write("&#169; " + n + " DSC UBHARA 2020. | HACKTOBERFEST "+n+" is AWESOME");
+        </script>
     </footer>
-    <div class="scroll-to-top" onclick="scrollToTop()">
-        <i class="fa fa-arrow-up"></i>
-    </div>
-    <script src="assets/script.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="assets/aos.js"></script>
-    <script>
-        // JavaScript to update the year in the footer
-        document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
+    <i onclick="topFunction()" id="myBtn" class="fa fa-arrow-up"></i>
 </body>
+<script src="assets/script.js"></script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="assets/aos.js"></script>
+
 </html>
