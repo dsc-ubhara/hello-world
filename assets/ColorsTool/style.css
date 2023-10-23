@@ -1,0 +1,87 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 360px;
+  height: 440px;
+  background: #fff;
+  border-radius: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sliders {
+  width: 280px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.sliders input {
+  position: relative;
+  width: 90%;
+  height: 5px;
+  -webkit-appearance: none;
+  background: #e6e6e6;
+  border-radius: 10px;
+  outline: none;
+}
+
+.sliders input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 15px;
+  width: 15px;
+  background: #3a0799;
+  border-radius: 50%;
+}
+
+.viewbox {
+  width: 250px;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  line-height: 50px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.viewbox .codeRGBA {
+  width: 150px;
+  height: 50px;
+  background: #dbdbdb;
+}
+
+.viewbox .codeHex {
+  width: 150px;
+  height: 50px;
+  background: #dbdbdb;
+}
+
+.buton {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #dbdbdb;
+  color: #bfbfbf;
+  cursor: pointer;
+}

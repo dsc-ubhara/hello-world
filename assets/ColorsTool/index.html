@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <script src="script.js"></script>
+    <title>RGBA Colors</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sliders">
+        <label>Red</label>
+        <input
+          type="range"
+          min="0"
+          max="255"
+          value="0"
+          oninput="getValue()"
+          id="red"
+        />
+        <label>Green</label>
+        <input
+          type="range"
+          min="0"
+          max="255"
+          value="0"
+          oninput="getValue()"
+          id="green"
+        />
+        <label>Blue</label>
+        <input
+          type="range"
+          min="0"
+          max="255"
+          value="0"
+          oninput="getValue()"
+          id="blue"
+        />
+        <label>Alpha</label>
+        <input
+          type="range"
+          min="0"
+          max="1.0"
+          step="0.1"
+          value="1"
+          oninput="getValue()"
+          id="alpha"
+        />
+      </div>
+      <p>Color RGBa</p>
+      <div class="viewbox">
+        <div class="btn">
+          <div class="codeRGBA">rgba(0,0,0,1)</div>
+          <div class="buton" onclick="copyText(`.codeRGBA`)">
+            <i class="uil uil-copy" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+      <p>Color Hex</p>
+      <div class="viewbox">
+        <div class="btn">
+          <div class="codeHex">#000000</div>
+          <div class="buton" onclick="copyText(`.codeHex`)">
+            <i class="uil uil-copy" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
