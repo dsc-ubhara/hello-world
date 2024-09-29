@@ -1,27 +1,28 @@
-function myNav() {
-    var x = document.getElementById('myTopnav')
-    if (x.className === 'topnav') {
-        x.className += ' responsive'
+// Toggle Navigation Menu
+function toggleNav() {
+    var nav = document.getElementById('myTopnav');
+    if (nav.className === 'topnav') {
+        nav.className += ' responsive';
     } else {
-        x.className = 'topnav'
+        nav.className = 'topnav';
     }
 }
 
-var mybutton = document.getElementById('myBtn')
+// Scroll to Top Button
+var mybutton = document.getElementById('myBtn');
 
 window.onscroll = function() {
-    scrollFunction()
-}
+    scrollFunction();
+};
 
 function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        mybutton.style.display = 'block'
+    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+        mybutton.style.display = 'block';
     } else {
-        mybutton.style.display = 'none'
+        mybutton.style.display = 'none';
     }
 }
 
 function topFunction() {
-    document.body.scrollTop = 0
-    document.documentElement.scrollTop = 0
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 }
