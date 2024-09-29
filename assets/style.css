@@ -1,127 +1,132 @@
+/* Reset CSS */
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
 }
 
-.topnav {
-    overflow: hidden;
+header {
     background-color: #333;
 }
 
+.topnav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
 .topnav a {
-    float: left;
-    display: block;
     color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
+    padding: 10px;
     text-decoration: none;
     font-size: 17px;
 }
 
 .topnav a:hover {
-    background-color: rgb(161, 244, 255);
-    color: black;
-}
-
-.topnav a.main {
-    background-color: #333;
+    background-color: #ddd;
+    color: #333;
 }
 
 .topnav .icon {
     display: none;
 }
 
-.profile header {
-    text-align: center;
+.main {
+    font-weight: bold;
+    color: aqua;
+    font-family: monospace;
 }
 
-h2,
-h3 {
-    color: #333;
+@media screen and (max-width: 768px) {
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+    .topnav a.icon {
+        display: block;
+    }
 }
 
+@media screen and (max-width: 768px) {
+    .topnav.responsive {
+        flex-direction: column;
+    }
+    .topnav.responsive a {
+        display: block;
+        text-align: left;
+    }
+}
+
+/* Main Content */
 main {
+    display: flex;
+    flex-wrap: wrap;
     padding: 20px;
-    overflow: auto;
-    text-align: justify;
-}
-
-a {
-    text-decoration: none;
 }
 
 .card {
-    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
+    flex: 1;
+    margin: 10px;
     padding: 20px;
-    margin-top: 20px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
 }
 
 .featured-images {
     width: 100%;
-    max-height: 300%;
-    object-fit: cover;
-    object-position: center;
-}
-
-header {
-    display: inline;
-}
-
-.profile img {
-    width: 200px;
-    height: 200px;
-    border-radius: 5%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-content {
-    float: left;
-    width: 70%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 5px;
 }
 
 aside {
-    float: right;
-    width: 30%;
-    padding-left: 20px;
+    flex: 0 0 300px;
+    margin: 10px;
+}
+
+.profile img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+table {
+    width: 100%;
+}
+
+table th, table td {
+    text-align: left;
+    padding: 8px;
 }
 
 footer {
-    font-family: monospace;
-    font-size: 12px;
-    padding: 40px;
     text-align: center;
-    color: #333;
-    background-color: #D1E8E4;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
 }
 
-table th {
-    text-align: left;
-    padding: 10px;
-}
-
-#myBtn {
-    display: none;
+/* Scroll to Top Button */
+.scroll-top {
     position: fixed;
     bottom: 20px;
     right: 30px;
-    z-index: 99;
-    font-size: 18px;
-    border: none;
-    outline: none;
+    display: none;
     background-color: rgba(0, 182, 207, 0.5);
     color: white;
-    cursor: pointer;
+    border: none;
     padding: 10px;
-    border-radius: 30px;
+    border-radius: 50%;
+    cursor: pointer;
 }
 
-#myBtn:hover {
+.scroll-top:hover {
     background-color: rgba(51, 51, 51, 0.5);
 }
