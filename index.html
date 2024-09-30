@@ -1,80 +1,111 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DSC UBHARA HACKTOBERFEST 2022</title>
-    <link rel="shortcut icon" href="assets/img/Logo.jpg" type="image/x-icon">
-    <!-- CSS Stylesheets -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/style.css">
-    <!-- Font Awesome untuk ikon -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="assets/img/Logo.jpg" type="image/x-icon">
+    <title>DSC UBHARA Portal</title>
 </head>
 
 <body>
+    <!-- Header -->
     <header>
-        <nav class="topnav" id="myTopnav">
-            <a href="index.html" class="main">DSC UBHARA</a>
+        <div class="topnav" id="myTopnav">
+            <a href="index.html" style="color: aqua; font-family: monospace;" class="main"><b>DSC UBHARA</b></a>
             <a href="index.html">Home</a>
-            <a href="#article">Artikel</a>
-            <a href="pong.html">Pong Game</a>
-            <a href="assets/2048/index.html">2048 Game</a>
-            <a href="assets/snake/index.html">Snake Game</a>
-            <a href="#about">Tentang</a>
-            <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+            <a href="#latest-news">Latest News</a>
+            <a href="#events">Events</a>
+            <a href="#about">About</a>
+            <a href="javascript:void(0);" class="icon" onclick="myNav()">
                 <i class="fa fa-bars"></i>
             </a>
-        </nav>
+        </div>
     </header>
 
+    <!-- Main Content -->
     <main>
-        <section id="article" class="card">
-            <h2>DSC UBHARA INFO SESSIONS</h2>
-            <img src="assets/img/info.jpg" class="featured-images" alt="Info Sessions">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
-            <!-- Konten lainnya -->
+        <section id="latest-news" class="grid-container">
+            <!-- Article 1 -->
+            <article class="card" data-aos="fade-right">
+                <img src="assets/img/info.jpg" class="featured-images" alt="Info Session">
+                <div class="article-content">
+                    <a href="#">
+                        <h2>DSC UBHARA INFO SESSIONS</h2>
+                    </a>
+                    <p>DSC UBHARA mengadakan sesi informasi untuk memperkenalkan teknologi Google terbaru...</p>
+                </div>
+            </article>
+
+            <!-- Article 2 -->
+            <article class="card" data-aos="fade-right">
+                <img src="assets/img/banner.jpg" class="featured-images" alt="DSC UBHARA">
+                <div class="article-content">
+                    <a href="#">
+                        <h2>DSC UBHARA Memulai Perjalanan</h2>
+                    </a>
+                    <p>Developer Student Club Ubhara kini aktif dengan berbagai program untuk meningkatkan kemampuan developer mahasiswa...</p>
+                </div>
+            </article>
+
+            <!-- More Articles... -->
         </section>
 
-        <section class="card">
-            <h2>DSC UBHARA</h2>
-            <img src="assets/img/banner.jpg" class="featured-images" alt="Banner DSC UBHARA">
-            <p>Selamat datang di chapter DSC Ubhara 2020.</p>
-            <!-- Konten lainnya -->
+        <section id="events" class="grid-container">
+            <h2>Upcoming Events</h2>
+            <article class="card" data-aos="fade-left">
+                <img src="assets/img/event.jpg" class="featured-images" alt="Event">
+                <div class="article-content">
+                    <a href="#">
+                        <h2>Workshop: Introduction to Flutter</h2>
+                    </a>
+                    <p>Bergabunglah dengan kami untuk belajar membangun aplikasi mobile menggunakan Flutter. Daftar sekarang!</p>
+                </div>
+            </article>
         </section>
+
+        <aside>
+            <article class="profile card" id="about" data-aos="fade-left">
+                <header>
+                    <h2>About DSC UBHARA</h2>
+                    <figure>
+                        <img src="assets/img/Logo.jpg" alt="DSC UBHARA Logo">
+                    </figure>
+                </header>
+                <section>
+                    <table>
+                        <tr>
+                            <th>Nama</th>
+                            <td>DSC UBHARA</td>
+                        </tr>
+                        <tr>
+                            <th>Email</th>
+                            <td>dsc.ubhara@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <th>Quote</th>
+                            <td>Create Impactful Solutions</td>
+                        </tr>
+                    </table>
+                </section>
+            </article>
+        </aside>
     </main>
 
-    <aside>
-        <section class="profile card" id="about">
-            <h2>Tentang Kami</h2>
-            <img src="assets/img/Logo.jpg" alt="Logo DSC UBHARA">
-            <table>
-                <tr>
-                    <th>Nama</th>
-                    <td>DSC UBHARA</td>
-                </tr>
-                <tr>
-                    <th>Email</th>
-                    <td><a href="mailto:dsc.ubhara@gmail.com">dsc.ubhara@gmail.com</a></td>
-                </tr>
-                <tr>
-                    <th>Quote</th>
-                    <td>Create Impactful</td>
-                </tr>
-            </table>
-        </section>
-    </aside>
-
+    <!-- Footer -->
     <footer>
-        <p>&#169; 2022 DSC UBHARA. | HACKTOBERFEST 2022 is AWESOME</p>
+        <p>&#169; <script>document.write(new Date().getFullYear())</script> DSC UBHARA | Empowering Future Developers</p>
     </footer>
 
-    <button onclick="topFunction()" id="myBtn" class="scroll-top">
-        <i class="fa fa-arrow-up"></i>
-    </button>
+    <i onclick="topFunction()" id="myBtn" class="fa fa-arrow-up"></i>
 
-    <!-- JavaScript -->
     <script src="assets/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/aos.js"></script>
 </body>
 
 </html>
