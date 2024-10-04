@@ -170,6 +170,19 @@ footer {
     background-color: rgba(51, 51, 51, 0.5);
 }
 
+.featured-images {
+    max-width: 100%; /* Membuat gambar responsif */
+    height: auto; /* Menjaga aspek rasio */
+    object-fit: cover; /* Agar gambar memenuhi container dengan proporsi yang baik */
+}
+
+/* Untuk mengatur ukuran gambar di galeri */
+.gallery-item img {
+    max-width: 100%; /* Membuat gambar dalam galeri tidak melebihi container */
+    height: auto; /* Menjaga proporsi gambar */
+    object-fit: cover; /* Menjaga gambar tetap proporsional */
+}
+
 /* Media Queries for Responsive Design */
 @media (max-width: 768px) {
     .grid-container {
